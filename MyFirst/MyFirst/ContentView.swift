@@ -14,14 +14,18 @@ struct ContentView: View {
     var body: some View {
         
         VStack{
-            Text("Hello, World!")
+            Text(outputText)
                 .font(.largeTitle)
                 .fontWeight(.regular)
                 .foregroundColor(Color.blue)
                 .padding()
             
             Button(action: {
-                outputText = "Hi, Swift!"
+                if outputText == "Hello, World!" {
+                    outputText = "Hi,Swift"
+                } else {
+                    outputText = "Hello, World!"
+                }
             }) {
                 Text("切り替えボタン")
                     .font(.headline)
