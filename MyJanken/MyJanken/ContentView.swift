@@ -3,7 +3,7 @@
 //  MyJanken
 //
 //  Created by muffin man on 2021/07/20.
-//
+//  github Test
 
 import SwiftUI
 
