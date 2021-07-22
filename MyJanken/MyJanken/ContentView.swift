@@ -7,13 +7,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var answerNumber = 0
+    
     var body: some View {
         
         VStack {
-            Image("gu")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-            Text("グー")
+            
+            if answerNumber == 0 {
+                Text("これからじゃんけんをします")
+            } else if answerNumber == 1 {
+                Image("gu")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                Text("グー")
+            } else if answerNumber == 2 {
+                
+            } else {
+                
+            }
+    
             Button(action: {
                 print("test")
             }) {
