@@ -22,13 +22,19 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                 Text("グー")
             } else if answerNumber == 2 {
-                
+                Image("choki")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                Text("チョキ")
             } else {
-                
+                Image("pa")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                Text("パー")
             }
     
             Button(action: {
-                print("test")
+                answerNumber = answerNumber + 1
             }) {
                 Text("じゃんけんをする!")
             }
